@@ -20,176 +20,232 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/common.css?v=7" />
     <link rel="stylesheet" href="css/services.css" />
     <script src="js/theme.js"></script>
   </head>
-  <body>
+  <body class="hd-solid">
     <div data-include="partials/header.html"></div>
 
     <div class="page">
       <main>
-        <section class="page-hero">
-          <div class="container">
-            <span class="eyebrow" data-reveal>What We Do</span>
-            <h1 data-reveal style="--d: 0.08s">
-              Our <span class="hero-accent">Services</span>
-            </h1>
-            <p data-reveal style="--d: 0.16s">
+        <section class="sv-hero">
+          <div class="container sv-hero-grid">
+            <div data-reveal>
+              <span class="eyebrow">What We Do</span>
+              <h1>Our Services</h1>
+            </div>
+            <p data-reveal style="--d: 0.1s">
               Comprehensive technology services to accelerate your digital
               transformation.
             </p>
+            <span
+              class="sv-count"
+              data-reveal
+              style="--d: 0.2s"
+              aria-hidden="true"
+              >05</span
+            >
           </div>
         </section>
 
-        <section class="section">
-          <div class="container services-list">
-            <article class="service" style="--tint: #8b5cf6">
-              <div class="service-text" data-reveal="left">
-                <span class="service-icon"
-                  ><i class="fa-solid fa-brain"></i
-                ></span>
-                <span class="service-no">01</span>
-                <h2>Artificial Intelligence Solutions</h2>
-                <p>
-                  Harness the power of data and automation. Our AI-powered
-                  systems include predictive analytics, machine learning models,
-                  and smart automation to give your business a competitive edge.
-                  We build intelligent systems that learn, adapt, and optimize
-                  your operations.
-                </p>
-                <a href="contact.html" class="btn btn-outline btn-sm"
-                  >Enquire Now
-                  <span class="arrow" aria-hidden="true">&#8599;</span></a
-                >
-              </div>
-              <div class="service-media" data-reveal="right" style="--d: 0.1s">
-                <img
-                  src="images/hero-ai.png"
-                  alt="AI Solutions"
-                  loading="lazy"
-                />
-              </div>
-            </article>
-            <article class="service reverse" style="--tint: #f97316">
-              <div class="service-text" data-reveal="right">
-                <span class="service-icon"
-                  ><i class="fa-solid fa-robot"></i
-                ></span>
-                <span class="service-no">02</span>
-                <h2>Robotics Solutions</h2>
-                <p>
-                  Seamlessly integrate automation into your physical workflows.
-                  From smart robotic systems to industrial process automation,
-                  we provide end-to-end robotics integration to improve
-                  efficiency, accuracy, and safety in your manufacturing or
-                  logistics pipelines.
-                </p>
-                <a href="contact.html" class="btn btn-outline btn-sm"
-                  >Enquire Now
-                  <span class="arrow" aria-hidden="true">&#8599;</span></a
-                >
-              </div>
-              <div class="service-media" data-reveal="left" style="--d: 0.1s">
-                <img
-                  src="images/service two.jpg"
-                  alt="Robotics Solutions"
-                  loading="lazy"
-                />
-              </div>
-            </article>
-            <article class="service" style="--tint: #10b981">
-              <div class="service-text" data-reveal="left">
-                <span class="service-icon"
-                  ><i class="fa-solid fa-laptop-code"></i
-                ></span>
-                <span class="service-no">03</span>
-                <h2>Website Development</h2>
-                <p>
-                  Build a powerful digital presence. We develop responsive,
-                  modern, and secure websites engineered for robust business
-                  growth. Our web solutions are highly optimized, scalable, and
-                  designed with the latest UI/UX principles to engage your
-                  audience.
-                </p>
-                <a href="contact.html" class="btn btn-outline btn-sm"
-                  >Enquire Now
-                  <span class="arrow" aria-hidden="true">&#8599;</span></a
-                >
-              </div>
-              <div class="service-media" data-reveal="right" style="--d: 0.1s">
-                <img
-                  src="images/about-tech.png"
-                  alt="Website Development"
-                  loading="lazy"
-                />
-              </div>
-            </article>
-            <article class="service reverse" style="--tint: #ec4899">
-              <div class="service-text" data-reveal="right">
-                <span class="service-icon"
-                  ><i class="fa-solid fa-mobile-screen-button"></i
-                ></span>
-                <span class="service-no">04</span>
-                <h2>Mobile App Development</h2>
-                <p>
-                  Reach your customers wherever they are. We create custom
-                  Android and iOS applications built with scalable architecture.
-                  Our mobile apps provide seamless user experiences, high
-                  performance, and secure data handling.
-                </p>
-                <a href="contact.html" class="btn btn-outline btn-sm"
-                  >Enquire Now
-                  <span class="arrow" aria-hidden="true">&#8599;</span></a
-                >
-              </div>
-              <div class="service-media" data-reveal="left" style="--d: 0.1s">
-                <img
-                  src="images/smart-retail.png"
-                  alt="Mobile App Development"
-                  loading="lazy"
-                />
-              </div>
-            </article>
-            <article class="service" style="--tint: #eab308">
-              <div class="service-text" data-reveal="left">
-                <span class="service-icon"
-                  ><i class="fa-solid fa-cloud"></i
-                ></span>
-                <span class="service-no">05</span>
-                <h2>Cloud Solutions</h2>
-                <p>
-                  Scale your infrastructure effortlessly. We offer secure cloud
-                  hosting, comprehensive data security protocols, reliable
-                  backup systems, and full-scale infrastructure management to
-                  keep your business running 24/7 without interruption.
-                </p>
-                <a href="contact.html" class="btn btn-outline btn-sm"
-                  >Enquire Now
-                  <span class="arrow" aria-hidden="true">&#8599;</span></a
-                >
-              </div>
-              <div class="service-media" data-reveal="right" style="--d: 0.1s">
-                <img
-                  src="images/fintech.png"
-                  alt="Cloud Solutions"
-                  loading="lazy"
-                />
-              </div>
-            </article>
+        <section class="sv-list">
+          <div class="container">
+            <ul class="acc">
+              <li
+                class="acc-item open"
+                style="--tint: #8b5cf6; --d: 0s"
+                data-reveal
+              >
+                <button type="button" class="acc-head" aria-expanded="true">
+                  <span class="acc-no">01</span>
+                  <span class="acc-title"
+                    >Artificial Intelligence Solutions</span
+                  >
+                  <span class="acc-ic"><i class="fa-solid fa-brain"></i></span>
+                  <span class="acc-plus" aria-hidden="true"></span>
+                </button>
+                <div class="acc-panel">
+                  <div class="acc-inner">
+                    <div class="acc-body">
+                      <p>
+                        Harness the power of data and automation. Our AI-powered
+                        systems include predictive analytics, machine learning
+                        models, and smart automation to give your business a
+                        competitive edge. We build intelligent systems that
+                        learn, adapt, and optimize your operations.
+                      </p>
+                      <a href="contact.html" class="btn btn-outline btn-sm"
+                        >Enquire Now
+                        <span class="arrow" aria-hidden="true">&#8599;</span></a
+                      >
+                    </div>
+                    <div class="acc-img">
+                      <img
+                        src="images/hero-ai.png"
+                        alt="AI Solutions"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="acc-item"
+                style="--tint: #f97316; --d: 0.07s"
+                data-reveal
+              >
+                <button type="button" class="acc-head" aria-expanded="false">
+                  <span class="acc-no">02</span>
+                  <span class="acc-title">Robotics Solutions</span>
+                  <span class="acc-ic"><i class="fa-solid fa-robot"></i></span>
+                  <span class="acc-plus" aria-hidden="true"></span>
+                </button>
+                <div class="acc-panel">
+                  <div class="acc-inner">
+                    <div class="acc-body">
+                      <p>
+                        Seamlessly integrate automation into your physical
+                        workflows. From smart robotic systems to industrial
+                        process automation, we provide end-to-end robotics
+                        integration to improve efficiency, accuracy, and safety
+                        in your manufacturing or logistics pipelines.
+                      </p>
+                      <a href="contact.html" class="btn btn-outline btn-sm"
+                        >Enquire Now
+                        <span class="arrow" aria-hidden="true">&#8599;</span></a
+                      >
+                    </div>
+                    <div class="acc-img">
+                      <img
+                        src="images/service two.jpg"
+                        alt="Robotics Solutions"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="acc-item"
+                style="--tint: #10b981; --d: 0.14s"
+                data-reveal
+              >
+                <button type="button" class="acc-head" aria-expanded="false">
+                  <span class="acc-no">03</span>
+                  <span class="acc-title">Website Development</span>
+                  <span class="acc-ic"
+                    ><i class="fa-solid fa-laptop-code"></i
+                  ></span>
+                  <span class="acc-plus" aria-hidden="true"></span>
+                </button>
+                <div class="acc-panel">
+                  <div class="acc-inner">
+                    <div class="acc-body">
+                      <p>
+                        Build a powerful digital presence. We develop
+                        responsive, modern, and secure websites engineered for
+                        robust business growth. Our web solutions are highly
+                        optimized, scalable, and designed with the latest UI/UX
+                        principles to engage your audience.
+                      </p>
+                      <a href="contact.html" class="btn btn-outline btn-sm"
+                        >Enquire Now
+                        <span class="arrow" aria-hidden="true">&#8599;</span></a
+                      >
+                    </div>
+                    <div class="acc-img">
+                      <img
+                        src="images/about-tech.png"
+                        alt="Website Development"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="acc-item"
+                style="--tint: #ec4899; --d: 0.21s"
+                data-reveal
+              >
+                <button type="button" class="acc-head" aria-expanded="false">
+                  <span class="acc-no">04</span>
+                  <span class="acc-title">Mobile App Development</span>
+                  <span class="acc-ic"
+                    ><i class="fa-solid fa-mobile-screen-button"></i
+                  ></span>
+                  <span class="acc-plus" aria-hidden="true"></span>
+                </button>
+                <div class="acc-panel">
+                  <div class="acc-inner">
+                    <div class="acc-body">
+                      <p>
+                        Reach your customers wherever they are. We create custom
+                        Android and iOS applications built with scalable
+                        architecture. Our mobile apps provide seamless user
+                        experiences, high performance, and secure data handling.
+                      </p>
+                      <a href="contact.html" class="btn btn-outline btn-sm"
+                        >Enquire Now
+                        <span class="arrow" aria-hidden="true">&#8599;</span></a
+                      >
+                    </div>
+                    <div class="acc-img">
+                      <img
+                        src="images/smart-retail.png"
+                        alt="Mobile App Development"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li
+                class="acc-item"
+                style="--tint: #eab308; --d: 0.28s"
+                data-reveal
+              >
+                <button type="button" class="acc-head" aria-expanded="false">
+                  <span class="acc-no">05</span>
+                  <span class="acc-title">Cloud Solutions</span>
+                  <span class="acc-ic"><i class="fa-solid fa-cloud"></i></span>
+                  <span class="acc-plus" aria-hidden="true"></span>
+                </button>
+                <div class="acc-panel">
+                  <div class="acc-inner">
+                    <div class="acc-body">
+                      <p>
+                        Scale your infrastructure effortlessly. We offer secure
+                        cloud hosting, comprehensive data security protocols,
+                        reliable backup systems, and full-scale infrastructure
+                        management to keep your business running 24/7 without
+                        interruption.
+                      </p>
+                      <a href="contact.html" class="btn btn-outline btn-sm"
+                        >Enquire Now
+                        <span class="arrow" aria-hidden="true">&#8599;</span></a
+                      >
+                    </div>
+                    <div class="acc-img">
+                      <img
+                        src="images/fintech.png"
+                        alt="Cloud Solutions"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
         </section>
 
-        <section class="cta-band">
+        <section class="sv-strip">
           <div class="container" data-reveal>
-            <span class="eyebrow">Work Smarter, Faster</span>
-            <h2>Ready to Transform Your Business?</h2>
-            <p>
-              Partner with us to integrate cutting-edge AI and Robotics into
-              your operations.
-            </p>
+            <p>Need something tailored to your business?</p>
             <a href="contact.html" class="btn btn-primary"
-              >Get In Touch
+              >Talk To Us
               <span class="arrow" aria-hidden="true">&#8599;</span></a
             >
           </div>
@@ -199,6 +255,7 @@
       <div data-include="partials/footer.html"></div>
     </div>
 
-    <script src="js/main.js" defer></script>
+    <script src="js/main.js?v=6" defer></script>
+    <script src="js/services.js" defer></script>
   </body>
 </html>
