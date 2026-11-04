@@ -1,0 +1,250 @@
+.page-hero {
+  position: relative;
+  overflow: hidden;
+  padding: calc(var(--header-h) + clamp(48px, 7vw, 96px)) 0
+    clamp(56px, 7vw, 96px);
+  text-align: center;
+  color: #ffffff;
+  background:
+    radial-gradient(
+      700px 440px at 90% 0%,
+      rgba(196, 113, 245, 0.28),
+      transparent 62%
+    ),
+    radial-gradient(
+      600px 440px at 0% 100%,
+      rgba(76, 201, 240, 0.16),
+      transparent 62%
+    ),
+    var(--navy);
+}
+
+.page-hero h1 {
+  margin-top: 10px;
+  font-size: clamp(2.6rem, 6vw, 4.6rem);
+  font-weight: 300;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.hero-accent {
+  font-weight: 400;
+  background: var(--grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.page-hero p {
+  max-width: 520px;
+  margin: 16px auto 0;
+  color: rgba(255, 255, 255, 0.78);
+  font-size: 1.05rem;
+}
+
+.cta-band {
+  padding: clamp(56px, 8vw, 104px) 0;
+  text-align: center;
+  color: #ffffff;
+  background:
+    radial-gradient(
+      600px 400px at 100% 50%,
+      rgba(76, 201, 240, 0.22),
+      transparent 62%
+    ),
+    radial-gradient(
+      600px 400px at 0% 0%,
+      rgba(196, 113, 245, 0.28),
+      transparent 62%
+    ),
+    var(--navy);
+}
+
+.cta-band h2 {
+  margin: 10px 0 14px;
+  font-size: clamp(1.9rem, 3.8vw, 3rem);
+  font-weight: 300;
+  line-height: 1.18;
+}
+
+.cta-band p {
+  max-width: 480px;
+  margin: 0 auto 30px;
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+  gap: clamp(32px, 6vw, 80px);
+}
+
+.lead {
+  margin-top: 16px;
+  color: var(--muted);
+  font-size: 1.02rem;
+}
+
+.info-list {
+  display: grid;
+  gap: 14px;
+  margin-top: 32px;
+  list-style: none;
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 16px 18px;
+  border-radius: var(--radius);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  transition: transform 0.5s var(--ease);
+}
+
+.info-item:hover {
+  transform: translateX(4px);
+}
+
+.info-icon {
+  display: grid;
+  flex-shrink: 0;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  background: var(--grad);
+  color: #ffffff;
+  font-size: 1.1rem;
+}
+
+.info-item h3 {
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--muted);
+}
+
+.info-item p {
+  margin-top: 2px;
+  font-weight: 500;
+}
+
+.info-item a {
+  transition: color 0.3s ease;
+}
+
+.info-item a:hover {
+  color: var(--violet);
+}
+
+.form-card {
+  padding: clamp(24px, 4vw, 44px);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  box-shadow: 0 30px 60px -40px rgba(10, 16, 80, 0.35);
+}
+
+.form-card h2 {
+  margin-bottom: 26px;
+  font-size: clamp(1.6rem, 2.6vw, 2rem);
+  font-weight: 400;
+}
+
+.contact-form {
+  display: grid;
+  gap: 16px;
+}
+
+.field label {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+}
+
+.field input,
+.field textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-strong);
+  background: var(--bg);
+  color: var(--text);
+  font-size: 0.96rem;
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+  color: var(--faint);
+}
+
+.field input:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: var(--violet);
+  box-shadow: 0 0 0 4px rgba(196, 113, 245, 0.16);
+}
+
+.field input.invalid,
+.field textarea.invalid {
+  border-color: #ef4444;
+}
+
+.btn-block {
+  width: 100%;
+  justify-content: center;
+}
+
+.form-status {
+  min-height: 1.3em;
+  color: var(--muted);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.map-section {
+  padding-bottom: clamp(64px, 9vw, 112px);
+}
+
+.map {
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  aspect-ratio: 21 / 8;
+  min-height: 280px;
+  background: var(--surface-2);
+}
+
+.map iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+[data-theme="dark"] .map iframe {
+  filter: invert(0.9) hue-rotate(180deg) saturate(0.8);
+}
+
+@media (max-width: 860px) {
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .map {
+    aspect-ratio: 4 / 3;
+  }
+}
