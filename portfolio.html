@@ -20,190 +20,193 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
     <link rel="stylesheet" href="css/reset.css" />
-    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/common.css?v=7" />
     <link rel="stylesheet" href="css/portfolio.css" />
     <script src="js/theme.js"></script>
   </head>
-  <body>
+  <body class="hd-solid">
     <div data-include="partials/header.html"></div>
 
     <div class="page">
       <main>
-        <section class="page-hero">
-          <div class="container">
-            <span class="eyebrow" data-reveal>Our Work</span>
-            <h1 data-reveal style="--d: 0.08s">
-              Featured <span class="hero-accent">Projects</span>
-            </h1>
-            <p data-reveal style="--d: 0.16s">
+        <section class="pf-hero">
+          <div class="container pf-hero-grid">
+            <div data-reveal>
+              <span class="eyebrow">Our Work</span>
+              <h1>Featured Projects</h1>
+            </div>
+            <p data-reveal style="--d: 0.1s">
               Explore our successful implementations of AI, Robotics, and
               Digital Solutions globally.
             </p>
+            <span
+              class="pf-count"
+              data-reveal
+              style="--d: 0.2s"
+              aria-hidden="true"
+              >06</span
+            >
           </div>
         </section>
 
-        <section class="section">
+        <section class="pf-gallery">
           <div class="container">
-            <div class="filters" data-reveal>
-              <button type="button" class="chip active" data-filter="all">
+            <div class="tabs" data-reveal>
+              <button type="button" class="tab active" data-filter="all">
                 All
               </button>
-              <button type="button" class="chip" data-filter="ai">
+              <button type="button" class="tab" data-filter="ai">
                 AI &amp; Automation
               </button>
-              <button type="button" class="chip" data-filter="retail">
+              <button type="button" class="tab" data-filter="retail">
                 Retail
               </button>
-              <button type="button" class="chip" data-filter="web">Web</button>
-              <button type="button" class="chip" data-filter="mobile">
+              <button type="button" class="tab" data-filter="web">Web</button>
+              <button type="button" class="tab" data-filter="mobile">
                 Mobile
               </button>
-              <button type="button" class="chip" data-filter="software">
+              <button type="button" class="tab" data-filter="software">
                 Software
               </button>
-              <button type="button" class="chip" data-filter="cloud">
+              <button type="button" class="tab" data-filter="cloud">
                 Cloud
               </button>
             </div>
-            <div class="projects">
-              <article
-                class="project"
-                data-cat="ai"
-                style="--d: 0s"
-                data-reveal
-              >
-                <img
-                  src="images/portfolio 1.jpg"
-                  alt="AI Automation Platforms"
-                  loading="lazy"
-                />
-                <div class="project-body">
-                  <span class="project-tag">AI &amp; Automation</span>
-                  <h3>AI Automation Platforms</h3>
+            <div class="masonry">
+              <figure class="work t" data-cat="ai" style="--d: 0s" data-reveal>
+                <div class="work-img">
+                  <img
+                    src="images/portfolio 1.jpg"
+                    alt="AI Automation Platforms"
+                    loading="lazy"
+                  />
+                </div>
+                <figcaption>
+                  <span>AI &amp; Automation</span>
+                  <h2>AI Automation Platforms</h2>
                   <p>
                     Intelligent operational dashboards and automated process
                     management tools.
                   </p>
-                </div>
-                <span class="project-go" aria-hidden="true">&#8599;</span>
-              </article>
-              <article
-                class="project"
+                </figcaption>
+              </figure>
+              <figure
+                class="work w"
                 data-cat="retail"
-                style="--d: 0.07s"
+                style="--d: 0.06s"
                 data-reveal
               >
-                <img
-                  src="images/portfolio 2.jpg"
-                  alt="Smart Retail Systems"
-                  loading="lazy"
-                />
-                <div class="project-body">
-                  <span class="project-tag">Retail</span>
-                  <h3>Smart Retail Systems</h3>
+                <div class="work-img">
+                  <img
+                    src="images/portfolio 2.jpg"
+                    alt="Smart Retail Systems"
+                    loading="lazy"
+                  />
+                </div>
+                <figcaption>
+                  <span>Retail</span>
+                  <h2>Smart Retail Systems</h2>
                   <p>
                     Next-generation POS and AI inventory management solutions.
                   </p>
-                </div>
-                <span class="project-go" aria-hidden="true">&#8599;</span>
-              </article>
-              <article
-                class="project"
+                </figcaption>
+              </figure>
+              <figure
+                class="work w"
                 data-cat="web"
-                style="--d: 0.14s"
+                style="--d: 0.12s"
                 data-reveal
               >
-                <img
-                  src="images/portfolio 3.jpg"
-                  alt="Corporate Websites"
-                  loading="lazy"
-                />
-                <div class="project-body">
-                  <span class="project-tag">Web</span>
-                  <h3>Corporate Websites</h3>
+                <div class="work-img">
+                  <img
+                    src="images/portfolio 3.jpg"
+                    alt="Corporate Websites"
+                    loading="lazy"
+                  />
+                </div>
+                <figcaption>
+                  <span>Web</span>
+                  <h2>Corporate Websites</h2>
                   <p>
                     High-performance, secure, and modern corporate web
                     presences.
                   </p>
-                </div>
-                <span class="project-go" aria-hidden="true">&#8599;</span>
-              </article>
-              <article
-                class="project"
+                </figcaption>
+              </figure>
+              <figure
+                class="work t"
                 data-cat="mobile"
-                style="--d: 0.21s"
+                style="--d: 0.18s"
                 data-reveal
               >
-                <img
-                  src="images/portfolio 4.jpg"
-                  alt="Mobile Applications"
-                  loading="lazy"
-                />
-                <div class="project-body">
-                  <span class="project-tag">Mobile</span>
-                  <h3>Mobile Applications</h3>
+                <div class="work-img">
+                  <img
+                    src="images/portfolio 4.jpg"
+                    alt="Mobile Applications"
+                    loading="lazy"
+                  />
+                </div>
+                <figcaption>
+                  <span>Mobile</span>
+                  <h2>Mobile Applications</h2>
                   <p>
                     Intuitive and scalable native apps for global enterprises.
                   </p>
-                </div>
-                <span class="project-go" aria-hidden="true">&#8599;</span>
-              </article>
-              <article
-                class="project"
+                </figcaption>
+              </figure>
+              <figure
+                class="work t"
                 data-cat="software"
-                style="--d: 0.28s"
+                style="--d: 0.24s"
                 data-reveal
               >
-                <img
-                  src="images/portfolio 5.jpg"
-                  alt="Business Management Software"
-                  loading="lazy"
-                />
-                <div class="project-body">
-                  <span class="project-tag">Software</span>
-                  <h3>Business Management Software</h3>
+                <div class="work-img">
+                  <img
+                    src="images/portfolio 5.jpg"
+                    alt="Business Management Software"
+                    loading="lazy"
+                  />
+                </div>
+                <figcaption>
+                  <span>Software</span>
+                  <h2>Business Management Software</h2>
                   <p>
                     Custom ERP systems tailored to specialized business
                     workflows.
                   </p>
-                </div>
-                <span class="project-go" aria-hidden="true">&#8599;</span>
-              </article>
-              <article
-                class="project"
+                </figcaption>
+              </figure>
+              <figure
+                class="work w"
                 data-cat="cloud"
-                style="--d: 0.35s"
+                style="--d: 0.3s"
                 data-reveal
               >
-                <img
-                  src="images/about-tech.png"
-                  alt="Cloud Infrastructure Projects"
-                  loading="lazy"
-                />
-                <div class="project-body">
-                  <span class="project-tag">Cloud</span>
-                  <h3>Cloud Infrastructure Projects</h3>
+                <div class="work-img">
+                  <img
+                    src="images/about-tech.png"
+                    alt="Cloud Infrastructure Projects"
+                    loading="lazy"
+                  />
+                </div>
+                <figcaption>
+                  <span>Cloud</span>
+                  <h2>Cloud Infrastructure Projects</h2>
                   <p>
                     Secure and scalable AWS/GCP cloud migrations and
                     maintenance.
                   </p>
-                </div>
-                <span class="project-go" aria-hidden="true">&#8599;</span>
-              </article>
+                </figcaption>
+              </figure>
             </div>
           </div>
         </section>
 
-        <section class="cta-band">
+        <section class="pf-end">
           <div class="container" data-reveal>
-            <span class="eyebrow">Work Smarter, Faster</span>
-            <h2>Ready to Transform Your Business?</h2>
-            <p>
-              Partner with us to integrate cutting-edge AI and Robotics into
-              your operations.
-            </p>
+            <h2>Have a project in mind?</h2>
             <a href="contact.html" class="btn btn-primary"
-              >Get In Touch
+              >Let&rsquo;s Build It
               <span class="arrow" aria-hidden="true">&#8599;</span></a
             >
           </div>
@@ -213,7 +216,7 @@
       <div data-include="partials/footer.html"></div>
     </div>
 
-    <script src="js/main.js" defer></script>
+    <script src="js/main.js?v=6" defer></script>
     <script src="js/portfolio.js" defer></script>
   </body>
 </html>
